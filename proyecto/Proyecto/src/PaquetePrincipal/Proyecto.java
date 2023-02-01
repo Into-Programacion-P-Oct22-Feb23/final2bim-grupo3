@@ -67,7 +67,7 @@ public class Proyecto {
                                     } else {
                                         System.out.println("Error en la "
                                                 + "opcion seleccionada");
-                                        contador = 0;
+                                        contador = contador + 0 ;
                                     }
                                 }
                             }
@@ -78,10 +78,10 @@ public class Proyecto {
             }
             System.out.println("Ingrese 9 para salir");
             opcionDos = entrada.nextInt();
-            
+
             if (opcionDos == 9) {
                 bandera = false;
-                
+
                 if (contador > 0) {
                     mensaje = Mensaje.obtenerMensaje(contador);
                     System.out.printf("Con número de cuentas %d es: %s",
